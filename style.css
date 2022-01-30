@@ -1,0 +1,31 @@
+h1{
+    font-size: 5em;
+}
+
+#profile_pic{
+    height: 400px;
+}
+.social-icon{
+    height: 50px;
+}
+img{
+    height: 400px;
+    /*px,
+    em,rem
+    %
+    in,cm
+    vh,vw
+    */
+}
+body{
+    background-color:aliceblue;
+}
+
+div{
+    color:cornflowerblue;
+}
+
+a{
+    color:brown;
+    text-decoration: none;
+}
