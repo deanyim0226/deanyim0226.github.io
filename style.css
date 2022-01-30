@@ -2,11 +2,17 @@ h1{
     font-size: 5em;
 }
 
+#title{
+    margin-top: auto;
+}
+
+
 #profile_pic{
     height: 400px;
 }
 .social-icon{
     height: 50px;
+    padding: 1ex;
 }
 img{
     height: 400px;
