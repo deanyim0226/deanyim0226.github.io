@@ -1,0 +1,598 @@
+body{
+   
+    background-color:  rgb(175, 175, 175);;
+    
+    padding: 0%;
+    margin: 0%;
+    font-family: "Silkscreen" , "Times New Roman";
+    
+}
+
+/*
+-------------------------------------NEVIGATION----------------------------------------------
+*/
+.logo{
+    padding-top: 0.2em;
+    float: left;
+    font-style: italic;
+    font-family: "Silkscreen" , "Times New Roman";;
+}
+
+header {
+    padding-top: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #e1e1e1;
+    padding-right: 1em;
+    padding-left:1.5em;
+
+    max-width: 100%;
+    text-align: right;
+}
+
+.nav-ul{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    padding-left: 0;
+}
+
+.nav-li{
+    
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+   
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-family: "Silkscreen" , "Times New Roman";;
+
+}
+
+.link:hover{
+    color:#525252;
+}
+/*
+-------------------------------------HOME----------------------------------------------
+*/
+ 
+.home{
+    position: relative;
+    background-image: url("img/background.jpg");
+    background-position: center;
+
+    border: 1px solid #ebebeb;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: auto;
+    height: 666px;
+}
+
+#right-bottom{
+    color: #d0d0d0;
+    position: absolute;
+    bottom:1px;
+    right: 30px;
+   
+}
+
+/*
+-------------------------------------ABOUT ME----------------------------------------------
+*/
+.about{
+    padding-top: 1em;
+    margin: 0;
+    height: auto;
+
+}
+
+.subject-txt{
+    background-color: #e1e1e1;
+    text-align: center;
+    color: rgb(56, 54, 54);
+    font-size: 21px; 
+ 
+}
+
+.content-box{
+    margin: 1em;
+    padding: 1.3em;
+ 
+    border: 1px solid #ebebeb;    
+}
+
+.content-txt{
+    padding-left: 2.7em;
+    display: inline-block;
+}
+
+.content-paragraph{
+    display: inline-block;
+    text-align: center;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 1em;
+    margin-left: 4em;
+}
+
+.bio{
+    margin: 1.2em;
+    padding: 1.9em;
+    padding-top: 0;
+    font-size: 18px;
+   
+}
+
+.profile, h4{
+    padding-left: 1.2em;
+}
+.profile, h5{
+    padding-left: 1.4em;
+}
+.profile, h6{
+    padding-left: 1.8em;
+}
+
+.img-ul{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    padding-left: 0;
+}
+
+.img-li{
+    
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+   
+}
+
+/*
+------------------------------------------PROJECTS--------------------------------------------------
+*/
+.projects{
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+.card-title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.card-text{
+    font-size: 1.4em;
+    
+}
+.card-body{
+    height: auto;
+}
+
+.card-link{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.card-link:hover{
+    color: black;
+}
+/*
+------------------------------------------CONTACT-----------------------------------------------------------
+*/
+
+
+/*
+------------------------------------------FOOTER-----------------------------------------------------------
+*/
+
+footer{
+    text-align: center;
+    bottom: 0;
+   
+}
+.img-s-ul{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    padding-left: 0;
+}
+
+.img-s-li{
+    
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+/*
+-------------------------------------RESPONSIVENESS-------------------------------------------------
+*/
+@media (max-width: 1400px) { 
+    .card-title{
+        font-weight: bold;
+        font-size: 1.35em;
+    }
+    .card-text{
+        font-size: 1.3em;
+    }
+    .card-link{
+        font-size: 1.2em;
+    }
+ }
+
+ @media (max-width: 1200px) {
+    .card-title{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .card-text{
+        font-size: 1.15em;
+    }
+    .card-link{
+        font-size: 1.05em;
+    }
+}
+
+@media (max-width: 992px) {
+    .icon{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .card-title{
+        font-weight: bold;
+        font-size: 1.05em;
+    }
+    .card-text{
+        font-size: 1.0em;
+    }
+    .card-link{
+        font-size: 0.9em;
+    }
+ }
+
+ @media (max-width: 768px) { 
+    .link{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .card-title{
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+    .card-text{
+        font-size: 0.85em;
+    }
+    .card-link{
+        font-size: 0.75em;
+    }
+    .col-4{
+        width: 100%;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+    .col-6{
+        width: 100%;
+    }
+ }
+
+@media all and (max-width: 576px) {
+    .link{
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    
+    }
+    #right-bottom{
+        font-size: 1em;
+    }
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
+    .card-title{
+        
+        font-size: 0.8em;
+    }
+    .card-text{
+        font-size: 0.75em;
+    }
+    .card-link{
+        font-size: 0.65em;
+    }
+    .col-4{
+        width: 100%;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+    .col-6{
+        width: 100%;
+    }
+
+
+ }
+
+ @media all and (max-width: 470px) {
+    .icon{
+        width: 32px;
+        height: 32px;
+    }
+    .logo{
+        font-size: 14px;
+        padding-top: 12px;
+    }
+    .nav-li{
+        
+        display: inline-block;
+        padding-left: 1px;
+        padding-right: 1px;
+        font-size: 1em;
+       
+    }
+
+    .link{
+        text-decoration: none;
+        color: black;
+        font-size: 8.4px;
+    
+    }
+    
+    #right-bottom{
+        font-size: 0.9em;
+    }
+
+    .profile-picture{
+        border-radius: 50%;
+        border: 1px solid white;
+        margin: 1em;
+        margin-left: 3em;
+    }
+
+    .profile, h4{
+       font-size: 1.2em;
+       padding-left: 1.1em;
+    }
+    .profile, h5{
+        font-size: 1.1em;
+        padding-left: 1.2em;
+    }
+    .profile, h6{
+        font-size: 1.0em;
+        padding-left: 1.3em;
+    }
+
+    .bio{
+        font-size: 0.9em;
+        margin: 1em;
+        padding: 2em;
+        padding-top: 0;
+    }
+
+    .card-title{
+        
+        font-size: 0.8em;
+    }
+    .card-text{
+        font-size: 0.75em;
+    }
+    .card-link{
+        font-size: 0.65em;
+    }
+    .col-4{
+        width: 100%;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+    .col-6{
+        width: 100%;
+    }
+
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .f-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .copyright{
+        font-size: 15px;
+    }
+    
+
+ }
+
+ @media all and (max-width: 370px) {
+  
+    .logo{
+        font-size: 12px;
+        padding-top: 14px;
+    }
+    .nav-li{
+        
+        display: inline-block;
+        padding-left: 1px;
+        padding-right: 1px;
+        font-size: 1em;
+       
+    }
+    .link{
+        text-decoration: none;
+        color: black;
+        font-size: 8px;
+    
+    }
+
+    #right-bottom{
+        font-size: 0.75em;
+    }
+
+
+    .profile-picture{
+        border-radius: 50%;
+        border: 1px solid white;
+        width: 175px;
+        height: 175px;
+        margin: 1em;
+ 
+    }
+
+    .profile, h4{
+        font-size: 1em;
+        padding-left: 1em;
+     }
+     .profile, h5{
+         font-size: 0.9em;
+         padding-left: 1.1em;
+     }
+     .profile, h6{
+         font-size: 0.8em;
+         padding-left: 1.3em;
+     }
+
+    .bio{
+    
+        font-size: 0.65em;
+        
+    }
+
+    .card-title{
+        
+        font-size: 0.8em;
+    }
+    .card-text{
+        font-size: 0.75em;
+    }
+    .card-link{
+        font-size: 0.65em;
+    }
+    .col-4{
+        width: 100%;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+    .col-6{
+        width: 100%;
+    }
+
+    .icon{
+        width: 17px;
+        height: 17px;
+    }
+
+    .f-icon{
+        width: 16px;
+        height: 16px;
+    }
+
+    .copyright{
+        font-size: 10px;
+    }
+    
+ }
+
+ @media all and (max-width: 300px) {
+    .logo{
+        font-size: 10px;
+        padding-top: 16px;
+    }
+    
+    .nav-li{
+        
+        display: inline-block;
+        padding-left: 1px;
+        padding-right: 1px;
+        font-size: 1em;
+       
+    }
+
+    .link{
+        text-decoration: none;
+        color: black;
+        font-size: 7px;
+    
+    }
+    #right-bottom{
+        font-size: 0.6em;
+    }
+
+    .profile-picture{
+        border-radius: 50%;
+        border: 1px solid white;
+        width: 175px;
+        height: 175px;
+        margin: 1em;
+ 
+    }
+
+    .profile, h4{
+        font-size: 1em;
+        padding-left: 1em;
+     }
+     .profile, h5{
+         font-size: 0.9em;
+         padding-left: 1.1em;
+     }
+     .profile, h6{
+         font-size: 0.8em;
+         padding-left: 1.3em;
+     }
+
+    .bio{
+    
+        font-size: 0.65em;
+        
+    }
+
+    .card-title{
+        
+        font-size: 0.8em;
+    }
+    .card-text{
+        font-size: 0.75em;
+    }
+    .card-link{
+        font-size: 0.65em;
+    }
+    .col-4{
+        width: 100%;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+    .col-6{
+        width: 100%;
+    }
+
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .f-icon{
+        width: 13px;
+        height: 13px;
+    }
+
+    .copyright{
+        font-size: 10px;
+    }
+ }
