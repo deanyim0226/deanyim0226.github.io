@@ -189,6 +189,13 @@ nav {
 .card-link:hover{
     color: black;
 }
+.project-screenshot {
+	width:  400px;
+	height: 250px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: calc(1em - 10px) calc(1em - 10px) 0 0
+}
 /*
 ------------------------------------------CONTACT-----------------------------------------------------------
 */
@@ -230,6 +237,14 @@ footer{
     }
     .card-link{
         font-size: 1.2em;
+    }
+    
+    .project-screenshot {
+        width:  800px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: calc(1em - 10px) calc(1em - 10px) 0 0
     }
  }
 
