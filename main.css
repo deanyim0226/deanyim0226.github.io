@@ -185,9 +185,19 @@ nav {
 .card-link{
     text-decoration: none;
     font-size: 1.2em;
+    float: left;
+}
+.card-link1{
+    text-decoration: none;
+    font-size: 1.2em;
+    float: right;
 }
 .card-link:hover{
     color: black;
+}
+.card-img{
+    height: 250px;
+	border-radius: 10;
 }
 .project-screenshot {
 	width:  400px;
