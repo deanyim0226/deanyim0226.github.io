@@ -6,49 +6,156 @@
   <meta name="author" content="Dean Yim">
   <meta name="description" content="This is my portfolio web site">
   <meta name="viewport" content="width=device-width, initial-scale =1.0">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+  </style>
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
   
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  
   <link rel = "stylesheet" href ="main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <title>Dean's Portfolio</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-    </style>
-    
+
+  <title>Daniel's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"> 
+   </script>
+   
 </head>
 
 <body>
+ <!--
+  <header>  
+    <nav class="nav"> 
 
+      <ul class="nav-bar">
+        <li class = "nav-li">
+           <a class ="link" href= "#home" >HOME</a>
+        </li>
+        <li class = "nav-li">
+          <a class ="link" href= "#about">ABOUT</a>
+        </li>
+        <li class = "nav-li">
+          <a class ="link" href="#projects">PROJECTS</a>
+        </li>
+        <li class = "nav-li">
+          <a class ="link" href="#skills">SKILLS</a>
+        </li>
+        <li class = "nav-li">
+          <a class ="link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  https://img.freepik.com/free-photo/sun-flare_74190-1494.jpg
+   -->
   <header>  
       <nav> 
-        <h3 class = "logo">Dean Yim</h3>
+       
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars"></i>
+        </label>
         <ul class ="nav-ul">
           <li class = "nav-li">
-             <a class ="link" href= "#home" >HOME</a>
+             <a  class ="active" href= "#home" >HOME</a>
           </li>
           <li class = "nav-li">
-            <a class ="link" href= "#about">ABOUT</a>
+            <a   href= "#about">ABOUT</a>
           </li>
           <li class = "nav-li">
-            <a class ="link" href="#projects">PROJECTS</a>
+            <a   href="#projects">PROJECTS</a>
           </li>
           <li class = "nav-li">
-            <a class ="link" href="#contact">CONTACT</a>
+            <a  href="#skills">SKILLS</a>
+          </li>
+          <li class = "nav-li">
+            <a  href="#contact">CONTACT</a>
           </li>
         </ul>
       </nav>
   </header>
 
-  <section class = "home" id = "home">
+  <article class = "home" id = "home">
+    
+    <img class="body-whole-img" src="./img/sky.jpg" style="width: 100%; height: 100vh;" >
+    <img class="body-overlap-img" src="./img/night.png" style="width: 100%; height: 100vh;">
+    <div class="body-overlap-div" style="width: 100%; height: 100vh;"></div>
+    
+    <div class="home-div">
+      <h1 class="home-div-title">DANIEL YIM</h1>
+      <h3 class="test" style="color: white;"> 
+        <span class="text-wrapper">
+          <b class="sub-title">SOFTWARE ENGINEER</b>
+        </span>
+      </h3>
+   
+    </div>
+    <div class="home-nav">
+      <a href="#about"><i class="fa fa-angle-double-down"></i></a>
+    </div>
+  </article>
 
-    <h4 id = "right-bottom">
-      Language: Korean and English
-    </h4>
-
-  </section>
-  
   <article class = "about" id ="about">
+   
+    <div class="container">
+      
+        <div class="container-img">
+          <img class = "profile-picture" src ="img/profile-pic2.jpg" alt="profile-photo">
+        </div>
+     
+        <div class="container-content">
+        
+            <h2>Hello~ I'm Daniel, 
+              <br>
+              Software Engineer
+              <br>
+               From Irvine, California.</h2>
+            <p>I recently graduated from the University of California Irvine with a degree in Computer Science. I had learned about the various programming languages of: C/C++, Java, Javascript/Typescript, Python, HTML/CSS, and SQL during my school years. I also have experience with Spring Boot, Node.js, React.js, Git/Github, Angular, MongoDB, and Oracle && MySQL. I am passionate about both frontend and backend programming, and my ultimate goal is to develop web/mobile applications that are something beneficial to the people in the world.
+            </p>
 
+            <p>
+            I would love to expand my network and talk about web/mobile applications that are feasible and deliverable to develop. 
+            <br><br>Feel free to connect with me! 
+            </p>
+        
+          <ul class = "img-ul">
+            <li class = "img-li"> <a id="github" href ="https://github.com/deanyim0226">
+            </a> 
+            </li>
+            <li class = "img-li">
+              <a id="linkedin" href ="https://www.linkedin.com/in/dean-yim/">
+    
+              </a>
+            </li>
+
+            <li class = "img-li">
+              <a id="resume" href ="img/Resume.pdf">
+              </a>
+            </li>
+
+            <li class = "img-li">
+              <a id="email" href ="mailto:danielyim92@gmail.com">
+              </a>
+            </li>
+          </ul>
+      
+        </div>
+    </div>
+   
+
+    <!--
     <h3 class ="subject-txt">
       About me
     </h3>
@@ -101,108 +208,383 @@
     
     
     </section>
+  -->
   </article>
 
+ 
   <article class = "projects" id = "projects">
-    
-    <h5 class ="subject-txt"> Projects </h5>
-   
-    <section class ="content-box">
-      <div class ="row">
-                      
+
+    <section class ="projects-container">
+      <h1 class ="projects-title"> Projects </h1>
+      <div class ="row">        
+
         <div class = "col-4">
             <div class = "card" >
-                <div class ="card-body">
-                    <h6 class = "card-title">Search Engine</h6>
-                    <p class = "card-text">Developed a search engine within UCI school domians</p>
-                    
-                    
-                    <a class ="card-link" href="img/SearchEngine.pdf" target="_blank">View Project coming soon</a>
-                    
+            
+                <img  class="card-img" src = "img/Shopping-cart-abandonment-1-1-scaled.jpg">
+                <div class="card-description">
+                    <h2 class="card-description-title"><a class="proejctList" href="#modal-project1" data-toggle="modal-project1" ><b>Shoppingcart</b></a></h2>
+                    <p class="card-description-content">
+                      A desktop application that provides users with the service to add products to a shopping cart and purchase the items.
+                    </p>
                 </div>
+<!--Developed a search engine within UCI school domians under 300ms-->
+                <div class="modal" id="modal-project1" role="dialog">
+          
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                      
+                          <h4 class="modal-title">Shoppingcart Application</h4>
+                          <button class="btn btn-default" data-dismiss="modal-project1">Close</button>
+                        </div>
+                        <div class="modal-body">
+                      
+                          <div class="modal-description">
+                            Shopping cart is something about blar blar
+                          </div>
+              
+                          <ul class="modal-ul">
+                            
+                            <li class="modal-li">
+                              <b>TECHNOLOGIES</b>
+                              <p>REACT.JS | REDUX | EXPRESS.JS | MONGO DB | HTML | CSS</p>
+                            </li>
+                            <li class="modal-li">
+                              <b>DEMO</b>
+                           
+                              <p><a class="link" href="">VIDEO</a></p>
+                            </li>
+                            <li> 
+                              <b>GITHUB</b>
+                                <p> <a class="link" href="https://github.com/deanyim0226/react">SHOPPING-CART</a> </p>
+                            </li>
+                          </ul>
+                          </div>
+                      </div>
+                </div>
+                    <!--  
+                      updated is necessarry 
+                      when the imgage is clicked, a image pops up
+                      describing the project and skills used in the project
+                      also link to the video demo.
+                    <p class = "card-text">Developed a search engine within UCI school domians under 300ms</p>
+                    <a class ="card-link" href="https://www.youtube.com/watch?v=SU0SK1PEImE" target="_blank">View Project</a>
+                    <a class ="card-link1" href="https://github.com/deanyim0226/" target="_blank">View Code</a>
+                    -->
+                 
             </div>
+
+            
+        
         </div>
     
         <div class = "col-4">
             <div class = "card">
-                <div class ="card-body">
-                    <h6 class = "card-title">Movie web application</h6>
-                    <img  class="card-img" src = "img/movie-web-application.png">
+             
+                  <img  class="card-img" src = "img/movie img2.jpg">
+                  <div class="card-description">
+                      <h2 class="card-description-title"><a class="proejctList" href="#modal-project2" data-toggle="modal-project2" ><b>Movie Application</b></a></h2>
+                      <p class="card-description-content">
+                        Developed a full-stack web application that provides users with movie services
+                      </p>
+                  </div>
+
+            
+                     <!--  
                     <p class = "card-text">Developed a full-stack web application that provides users with movie services</p>
-                    
                     <a class ="card-link" href="https://www.youtube.com/watch?v=SU0SK1PEImE" target="_blank">View Project</a>
                     <a class ="card-link1" href="https://github.com/deanyim0226/" target="_blank">View Code</a>
+                     -->
+           
+                  <div class="modal" id="modal-project2" role="dialog">
+          
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                      <div class="modal-header">
                     
-                </div>
+                        <h4 class="modal-title">Movie Application</h4>
+                        <button class="btn btn-default" data-dismiss="modal-project2">Close</button>
+                      </div>
+                      <div class="modal-body">
+                    
+                        <div class="modal-description">
+                          Movie applicaiton is something about blar blar
+                        </div>
+            
+                        <ul class="modal-ul">
+                          
+                          <li class="modal-li">
+                            <b>TECHNOLOGIES</b>
+                            <p>SPRING BOOT | JAVA | REACT.JS | MYSQL | HTML | CSS</p>
+                          </li>
+                          <li class="modal-li">
+                            <b>DEMO</b>
+                            <p><a class="link" href="https://www.youtube.com/watch?v=SU0SK1PEImE">VIDEO</a></p>
+                          </li>
+                          <li> 
+                            <b>GITHUB</b>
+                            <p> <a class="link" href="https://github.com/klefstad-teaching/cs122b-be1-idm-service-starter-deanyim0226">IDM </a> |
+                              <a class="link"  href="https://github.com/klefstad-teaching/cs122b-be2-movies-service-starter-deanyim0226">MOVICE </a> |
+                              <a class="link"  href="https://github.com/klefstad-teaching/cs122b-be3-billing-service-starter-new-deanyim0226">BILLING </a> |
+                              <a class="link"  href="https://github.com/klefstad-teaching/cs122b-be4-gateway-service-starter-new-deanyim0226">GATEWAY </a> |
+                              <a class="link" href="https://github.com/deanyim0226/Movie-Frontend">FRONTEND</a>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
 
         <div class = "col-4">
           <div class = "card">
-              <div class ="card-body">
-                  <h6 class = "card-title">Spotify Brower</h6>
-                  <img  class="card-img" src = "img/spotify-brower.png">
-                  <p class = "card-text"> Browse music using Spotify API and control the songs by hand gestures </p>
+  
+            <img  class="card-img" src = "img/spotify img2.png">
+            <div class="card-description">
+                <h2 class="card-description-title"><a class="proejctList" href="#modal-project3" data-toggle="modal-project3" ><b>Spotify Brower</b></a></h2>
+                <p class="card-description-content">
+                  SPOTIFY APPLICATION
+                </p>
+            </div>
+         
+            <div class="modal" id="modal-project3" role="dialog">
+          
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
                   
-                  <div>
-                  <a class ="card-link" href="https://www.youtube.com/watch?v=satctVotwmg" target="_blank">View Project</a>
-                  <a class ="card-link1" href="https://github.com/deanyim0226/" target="_blank">View Code</a>
-                  </div>
-              </div>
+                      <h4 class="modal-title">Spotify Brower</h4>
+                      <button class="btn btn-default" data-dismiss="modal-project3">Close</button>
+                    </div>
+                    <div class="modal-body">
+                  
+                      <div class="modal-description">
+                        Browse music using Spotify API and control the songs by hand gestures
+                      </div>
+          
+                      <ul class="modal-ul">
+                        
+                        <li class="modal-li">
+                          <b>TECHNOLOGIES</b>
+                          <p>EXPRESS.JS | TYPESCRIPT | ANGULAR | HANDTRACKER.JS | HTML | CSS</p>
+                        </li>
+                        <li class="modal-li">
+                          <b>DEMO</b>
+                          <p><a class="link"  href="https://www.youtube.com/watch?v=satctVotwmg">VIDEO</a></p>
+                        </li>
+                        <li> 
+                          <b>GITHUB</b>
+                          <p><a class="link"  href="https://github.com/deanyim0226/spotifyweb">SPOTIFY-BROWER</a> </p>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
           </div>
-        </div>
-        <!--
-        <div class = "col-4">
-          <div class = "card">
-              <div class ="card-body">
-                  <h6 class = "card-title">Resume</h6>
-                  <p class = "card-text"> Created Resume</p>
-      
-                  <a class ="card-link" href="https://github.com/deanyim0226/deanyim0226.github.io" target="_blank">View Project</a>
-              </div>
-          </div>
-        </div>
-        -->
       </div>
+      
+ 
+      <div class="row">
+       
+      </div>
+
+    <!--
+    <div class="container">
+      <h1 class ="container-title"> Projects </h1>
+      <div class="container-row">
+
+        <div class="container-col-3">
+          <img class= "projects-icon" id="spotify" src="./img/spotify.png"  alt="">
+        </div>
+
+        <div class="container-col-3">
+          <img class= "projects-icon" id="movie" src="./img/movie4.jpg"  alt="">
+        </div>
+
+        <div class="container-col-3">
+          <img class= "projects-icon" id="shoppingcart" src="./img/shoppingcart.png"  alt="">
+        </div>
+
+      </div>
+      <div class="container-row">
+        <div class="container-col-3">
+          <img class= "projects-icon" id="search" src="./img/searchengine3.jpg"  alt="">
+        </div>
+      </div>
+    <div>
+    -->
+   <!--
+
+        -->
+    </section>
+  </article>
+  
+  <article class="skills" id="skills">
+
+    <div class="skills-container">
+      <h1 class ="skills-title"> Skills </h1>
+      <div class="skills-container-row">
+        
+        <div class="container-col-3">
+          <img class="skills-icon" src="./img/skills-logo/javaimg.png"  alt="">
+          <h5>Java</h5>
+        </div>
+
+        <div class="container-col-3">
+          <img class="skills-icon" src="./img/skills-logo/pythonimg.jpg"  alt="">
+          <h5>Python</h5>
+        </div>
+
+        <div class="container-col-3">
+          <img class="skills-icon" src="./img/skills-logo/javasciptimg.png"  alt="">
+          <h5>Javascript</h5>
+        </div>
+        
+        <div class="container-col-3">
+          <img class="skills-icon" src="./img/skills-logo/c++.png" alt="">
+          <h5>C++</h5>
+        </div>
+     
+      </div>
+      <div class="skills-container-row">
+  
+        <div class="container-col-2">
+          <img class="skills-icon" src="./img/skills-logo/reactimg.png"  alt="">
+          <h5>React.js</h5>
+        </div>
+        <div class="container-col-2">
+          <img class="skills-icon" src="./img/skills-logo/angularimg.png"  alt="">
+          <h5>Angular</h5>
+        </div>
+        <div class="container-col-2">
+          <img class="skills-icon" src="./img/skills-logo/reduximg.png"  alt="">
+          <h5>Redux</h5>
+        </div>
+        <div class="container-col-2">
+          <img class="skills-icon" src="./img/skills-logo/nodeimg.png" alt="">
+          <h5>Node.js</h5>
+        </div>  
+
+        <div class="container-col-2">
+          <img class="skills-icon" src="./img/skills-logo/springimg.png" alt="">
+          <h5>Spring</h5>
+        </div>
+ 
+      </div>
+
+      <div class="skills-container-row">
+
+        <div class="container-col-5">
+          <img class="skills-icon" src="./img/skills-logo/mysqlimg.png"  alt="">
+          <h5>Oracle/MySQL</h5>
+        </div>
+
+        <div class="container-col-5">
+          <img class="skills-icon" src="./img/skills-logo/mongodbimg.jpg"  alt="">
+          <h5>MongoDB</h5>
+        </div>
+      </div>
+     
+
     </section>
   </article>
 
+
   <article class = "contact" id = "contact">
+    <div class="contact-container">
+     
+      <h1 class ="contact-title"> Contact Info </h1>
 
-    <h5 class ="subject-txt"> Contact </h5>
+      <div class="contact-container-row">
+        <div class="context-container-col6">
+          <ul class="contact-list">
+            <li>
+              <div class="contact-img">
+                <img src="./img/profileimg.png" style="width: 40px; height: 40px;" alt="">
+                <div class="contact-description">
+              
+                  <h5>About Me</h5>
+                  <h6><a style="text-decoration:none;
+                    color: black;" href="#about">Daniel Yim</a></h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-img">
+                <img src="./img/location.png" style="width: 40px; height: 40px;" alt="">
+                <div class="contact-description">
+              
+                  <h5>Location</h5>
+                  <h6>Irvine, CA</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-img">
+                <img src="./img/phone.png" style="width: 40px; height: 40px;" alt="">
+                <div class="contact-description">
+              
+                  <h5>Call Me At</h5>
+                  <h6>(213) 999-6350</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-img">
+                <img src="./img/email.png" style="width: 40px; height: 40px;" alt="">
+                <div class="contact-description">
+          
+                  <h5>Email Me At</h5>
+                  <h6> <a style="text-decoration:none;
+                  color: black;" href ="mailto:danielyim92@gmail.com">danielyim92@gmail.com</a></h6>
 
+                </div>
+              </div>
+            </li>
+          </ul>
+        
+        </div>
+        <div class="context-container-col6">
+            
+            <form class="contact-form">
+              <input disabled class="contact-form-text"  type="text" placeholder="  Name :">
+              <input disabled class="contact-form-text" type="text" placeholder="  Email :">
+              <textarea disabled class="contact-form-textarea" placeholder="  Message :"></textarea>
+              <input type="button" value="SEND MESSAGE" class="btn btn-outline-secondary" id="contact-form-button"></input>
+            </form>
+          </div>
+        </div>
+    </div>
   </article>
 
   <footer>
-    <ul class = "img-s-ul">
-      <li class = "img-s-li"> 
-        <a href ="https://github.com/deanyim0226">
-        <img class ="f-icon" src = "img/github.png" width = "30" height = "20" alt = "github">  
-      </a> 
-      </li>
-      <li class = "img-s-li">
-        <a href ="https://www.linkedin.com/in/dean-yim/">
-          <img class ="f-icon" src = "img/linkedin.png" width = "30" height = "20" alt = "linkedin">  
-        </a>
-      </li>
-      <li class = "img-s-li">
-        <a href ="https://github.com/deanyim0226/resume">
-          <img class ="f-icon" src = "img/resume.png" width = "30" height = "20" alt = "resume">  
-        </a>
-      </li>
-      <li class = "img-s-li">
-        <a href ="https://www.instagram.com/deanyim0226/">
-          <img class ="f-icon" src = "img/instagram.png" width = "30" height = "20" alt = "instagram">  
-        </a>
-      </li>
- 
-    </ul>
-
-    <h6 class = "copyright">
-      Copyright 2022 Dean Yim
-    </h6>
+      <div class="footer">
+        <ul class = "img-s-ul">
+          <li class = "img-s-li"> 
+            <a href ="https://github.com/deanyim0226">
+            <img class ="f-icon" src = "img/about-logo/github.png" width = "35" height = "35" alt = "github">  
+          </a> 
+          </li>
+          <li class = "img-s-li">
+            <a href ="https://www.linkedin.com/in/dean-yim/">
+              <img class ="f-icon" src = "img/about-logo/linkedin.png" width = "35" height = "35" alt = "linkedin">  
+            </a>
+          </li>
+          <li class = "img-s-li">
+            <a href ="https://github.com/deanyim0226/resume">
+              <img class ="f-icon" src = "img/about-logo/resume.png" width = "35" height = "35" alt = "resume">  
+            </a>
+          </li>
+    
+          <h5 class = "copyright">
+            Copyright - 2023 Daniel Yim
+          </h5>
+        </ul>
+      </div>
   </footer>
-
+ 
 </body>
 
 </html>
